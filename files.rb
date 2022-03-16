@@ -6,6 +6,15 @@ if File.exists?('./test.txt')
   file.close
 end
 
+# But we can also wrap the file read function in begin/rescue block, it can also help us avoid errors
+begin
+  file = File.open('./err.txt', 'r')
+  puts file.read
+  file.close
+rescue => e
+  puts "#{e.class}: #{e.message}"
+end
+
 # Writing Files
 # Writing to files also creates files in the process, if they aren't existent
 File.open('./test.txt', 'a') do |file|
