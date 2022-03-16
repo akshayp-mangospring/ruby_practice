@@ -8,7 +8,7 @@ guessed_word = ''
 puts "Welcome to word guessing game with #{GUESS_LIMIT} chances to guess a word. Can you guess the word if we provide you a hint?"
 puts ''
 
-while guessed_word != SECRET_WORD &&  guess_count < GUESS_LIMIT
+while guessed_word != SECRET_WORD && guess_count < GUESS_LIMIT
   puts 'Hint: Animal with the tallest neck.'
   print 'Enter Word: '
   guessed_word = gets.chomp.strip.downcase
