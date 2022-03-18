@@ -1,4 +1,4 @@
-require_relative '../common/constants'
+require_relative '../constants/constants'
 require_relative './hash_based_quiz'
 
 questions = [

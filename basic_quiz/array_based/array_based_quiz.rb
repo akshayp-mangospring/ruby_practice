@@ -1,4 +1,4 @@
-require_relative '../common/quiz'
+require_relative '../quiz/quiz'
 require_relative './question'
 
 class ArrayBasedQuiz < Quiz
